@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem POS & ERP Web Twins - Portofolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-section {
+            padding: 120px 0 60px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-btn:hover {
+            color: var(--text-main);
+        }
+        .project-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .project-header h1 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        .project-meta-tags {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .project-meta-tags span {
+            background: #f1f1f1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .project-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+        .project-content h2, .project-content h3 {
+            color: var(--text-main);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .project-content ul, .project-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .project-content li {
+            margin-bottom: 0.8rem;
+        }
+        .project-content strong {
+            color: var(--text-main);
+        }
+        .action-container {
+            margin-top: 4rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">Anisa - Portofolio.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-detail-section fade-up visible">
+            <a href="index.html#projects" class="back-btn">&larr; Kembali ke Portofolio</a>
+            
+            <div class="project-header">
+                <h1>Sistem POS & ERP Web Twins</h1>
+                <div class="project-meta-tags">
+                    <span>Point of Sale</span>
+                    <span>ERP System</span>
+                    <span>Multi-Outlet</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <h2>1. Apa Project Ini dan Dibuat Untuk Apa?</h2>
+                <p>Project ini adalah sebuah <strong>Sistem Point of Sale (POS) & ERP (Enterprise Resource Planning)</strong> skala menengah. Sistem ini dirancang khusus untuk mengelola operasional bisnis retail, toko, atau franchise yang memiliki banyak cabang (Multi-Outlet).</p>
+                <p>Sistem ini tidak hanya sekadar menangani kasir/penjualan, tetapi juga mencakup manajemen inventori barang secara mendalam, manajemen karyawan, hingga pencatatan keuangan yang detail seperti arus kas dan hutang piutang.</p>
+                
+                <h2>2. Role (Peran) Akses Pengguna</h2>
+                <p>Sistem ini menggunakan <em>Role-Based Access Control</em> yang dinamis, terbagi dalam tiga kategori utama:</p>
+                <ul>
+                    <li>👑 <strong>Owner (Pemilik):</strong> Role tertinggi tanpa batasan akses. Owner memiliki kontrol penuh ke area admin, dashboard analitik, dan seluruh fitur yang ada di dalam sistem.</li>
+                    <li>👥 <strong>Operator (Pegawai / Staf):</strong> Role untuk karyawan toko, seperti Kepala Toko atau Kasir. Hak akses (fitur apa saja yang bisa dibuka) ditentukan secara spesifik dan dinamis melalui manajemen Role Operator.</li>
+                    <li>👤 <strong>User (Pengguna/Pelanggan):</strong> Role ini dikhususkan untuk mengakses halaman depan (<em>landing page</em>) yang berfungsi untuk melakukan pembuatan pesanan atau transaksi pembelian secara mandiri.</li>
+                </ul>
+
+                <h2>3. Fitur Utama Sistem</h2>
+                <p>Terdapat 10 modul utama yang ada di sistem ini, yang kemudian diturunkan menjadi berbagai sub-fitur operasional:</p>
+                <ol>
+                    <li><strong>Dashboard:</strong> Ringkasan analitik bisnis dan performa masing-masing toko.</li>
+                    <li><strong>Manajemen Produk:</strong> Kelola barang, kategori, <em>stock card</em> (kartu stok), <em>stock opname</em> (audit stok), <em>price level</em> (tingkat harga), diskon, dan promo antar toko.</li>
+                    <li><strong>Transaksi (POS):</strong> Pemrosesan penjualan kasir, order pembayaran, dan pemilihan metode pembayaran yang sudah terintegrasi dengan <strong>Midtrans</strong>.</li>
+                    <li><strong>Manajemen Keuangan:</strong> Pencatatan arus kas (CashFlow), serta manajemen Hutang/Piutang secara detail.</li>
+                    <li><strong>Manajemen Pengguna:</strong> Mengelola akun Owner maupun Operator, termasuk pengaturan Shift dan Jadwal kerja.</li>
+                    <li><strong>Manajemen Outlet:</strong> Sistem multi-cabang untuk mengontrol produk dan promo di setiap cabang secara terpisah.</li>
+                    <li><strong>Kelola Kontak:</strong> Manajemen data database pelanggan (customer) dan supplier.</li>
+                    <li><strong>Transaksi Keuangan:</strong> Modul khusus untuk mencatat pergerakan uang selain dari transaksi penjualan barang (misal: operasional toko).</li>
+                    <li><strong>Laporan (Reporting):</strong> Ekspor laporan keuangan, pergerakan stok, dan penjualan (didukung dengan format Excel dan PDF).</li>
+                    <li><strong>Absensi:</strong> Sistem pencatatan kehadiran karyawan atau operator toko secara <em>real-time</em>.</li>
+                </ol>
+
+                <h2>4. Keunggulan Sistem</h2>
+                <ul>
+                    <li>🏪 <strong>Multi-Outlet Support:</strong> Dirancang dari awal untuk mendukung banyak toko/cabang. Pemilik bisa memantau dan membandingkan performa berbagai toko berbeda hanya dari satu sistem (Satu Pintu).</li>
+                    <li>🧑‍💼 <strong>Manajemen Karyawan Terintegrasi:</strong> Tidak hanya jualan, sistem ini juga menangani jadwal (shift) dan absensi karyawan sehingga pemilik tidak perlu menggunakan aplikasi HR terpisah.</li>
+                    <li>💰 <strong>Fitur Keuangan Lanjutan:</strong> Adanya pencatatan Hutang (Debt) dan Arus Kas (Cash Flow) membuat sistem ini lebih unggul dibandingkan sekadar aplikasi kasir biasa di pasaran.</li>
+                    <li>🚀 <strong>Teknologi Modern:</strong> Dibangun menggunakan <strong>Laravel 13</strong>, mendukung Payment Gateway terotomatisasi menggunakan <strong>Midtrans</strong>, serta memiliki fitur pembuatan laporan (report) yang kuat menggunakan DomPDF dan Maatwebsite Excel.</li>
+                </ul>
+            </div>
+
+            <div class="action-container">
+                <a href="https://twins.arunadigital.com/" target="_blank" style="display: inline-block; padding: 0.8rem 1.5rem; background: #000; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500;">Kunjungi Website Twins &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Portofolio. All rights reserved.</p>
+            <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Simaksi Gunung Butak - Portofolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-section {
+            padding: 120px 0 60px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-btn:hover {
+            color: var(--text-main);
+        }
+        .project-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .project-header h1 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        .project-meta-tags {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .project-meta-tags span {
+            background: #f1f1f1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .project-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+        .project-content h2, .project-content h3 {
+            color: var(--text-main);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .project-content ul, .project-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .project-content li {
+            margin-bottom: 0.8rem;
+        }
+        .project-content strong {
+            color: var(--text-main);
+        }
+        .action-container {
+            margin-top: 4rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">Anisa - Portofolio.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-detail-section fade-up visible">
+            <a href="index.html#projects" class="back-btn">&larr; Kembali ke Portofolio</a>
+            
+            <div class="project-header">
+                <h1>E-Simaksi Gunung Butak</h1>
+                <div class="project-meta-tags">
+                    <span>Web App</span>
+                    <span>PHP Native</span>
+                    <span>Management System</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <h2>1. Project Apa Ini?</h2>
+                <p>Web ini adalah Sistem Informasi Manajemen Akses Konservasi (SIMAKSI) Pendakian Gunung Butak secara online. Proyek ini dibangun menggunakan PHP Native, dipadukan dengan HTML, CSS kustom, dan Vanilla JavaScript. Web ini difungsikan sebagai platform lengkap, mulai dari media informasi (landing page), pendaftaran pendaki, hingga panel manajemen bagi petugas basecamp.</p>
+                
+                <h2>2. Role (Peran) Apa Saja yang Ada?</h2>
+                <p>Terdapat 2 Role (Peran) Utama pada sistem ini:</p>
+                <ul>
+                    <li><strong>Pendaki / Pengguna Umum (User):</strong> Masyarakat umum atau pendaki yang ingin melakukan pendakian.</li>
+                    <li><strong>Admin / Petugas Basecamp:</strong> Pengelola resmi atau pihak manajemen Gunung Butak yang bertugas di basecamp untuk mengatur operasional pendakian.</li>
+                </ul>
+
+                <h2>3. Fitur Apa Saja yang Tersedia?</h2>
+                <h3>🌟 Fitur Untuk Pendaki (User):</h3>
+                <ul>
+                    <li><strong>Sistem Auth:</strong> Registrasi, Login, dan manajemen profil pendaki.</li>
+                    <li><strong>Informasi Gunung:</strong> Menampilkan fakta gunung, rute akses, peta lokasi interaktif, waktu terbaik mendaki, dan keunggulan basecamp.</li>
+                    <li><strong>Prakiraan Cuaca Terkini:</strong> Menginformasikan cuaca 3 hari ke depan untuk persiapan keselamatan pendakian.</li>
+                    <li><strong>Reservasi / Booking Online:</strong> Form untuk mendaftarkan jadwal pendakian, mengisi data ketua kelompok & anggota, hingga mengunggah surat keterangan sehat.</li>
+                    <li><strong>Detail Transaksi:</strong> Mengecek status tiket, pembayaran (unggah bukti transfer), dan status pendakian.</li>
+                    <li><strong>Aksesibilitas UI:</strong> Mendukung fitur Dark/Light mode serta Toggle Bahasa terintegrasi.</li>
+                </ul>
+
+                <h3>⚙️ Fitur Untuk Admin (Petugas Basecamp):</h3>
+                <p>Sistem Admin sangat lengkap, mencakup:</p>
+                <ul>
+                    <li><strong>Dashboard Admin:</strong> Ringkasan statistik (jumlah pendaki, total reservasi, dsb).</li>
+                    <li><strong>Manajemen Kuota:</strong> Menutup atau mengatur batas maksimal pendaki harian agar gunung tidak overload.</li>
+                    <li><strong>Manajemen Reservasi:</strong> Memeriksa pendaftaran pendaki, validasi pembayaran, dan persetujuan surat sehat.</li>
+                    <li><strong>Manajemen Pendakian:</strong> Melakukan Check-in (saat pendaki naik) dan Check-out (saat turun) untuk memastikan semua pendaki turun dengan selamat.</li>
+                    <li><strong>Manajemen Pengumuman:</strong> Membuat broadcast info penting seperti cuaca buruk atau penutupan jalur.</li>
+                    <li><strong>Pembukuan Keuangan:</strong> Pencatatan otomatis untuk pemasukan tiket dan laporan keuangan basecamp.</li>
+                    <li><strong>Manajemen User:</strong> Mengelola data seluruh akun pendaki.</li>
+                </ul>
+
+                <h2>4. Apa Keunggulan Web Ini?</h2>
+                <ul>
+                    <li><strong>Desain Sangat Modern:</strong> Menggunakan desain ala Glassmorphism, gradien dinamis, animasi scroll, dan efek interaktif (seperti pulse button) yang membuatnya terasa sangat premium meski ini adalah PHP Native.</li>
+                    <li><strong>Berfokus Pada Keselamatan (Safety First):</strong> Terintegrasinya fitur Check-in/Check-out serta laporan cuaca membuktikan bahwa sistem ini dibuat untuk meminimalisir pendaki hilang atau overcapacity.</li>
+                    <li><strong>Administrasi Terpusat:</strong> Pengelola basecamp tidak perlu lagi mencatat di buku besar karena semua sistem administrasi dan pembukuan ter-digitalisasi secara rapi.</li>
+                </ul>
+
+                <h2>5. Web Ini Dibuat Untuk Apa?</h2>
+                <p>Web ini dibuat untuk mendongkrak profesionalisme dan keamanan pengelolaan pendakian Gunung Butak melalui proses digital. Dengan web ini, pendaki bisa mendaftar dari rumah, pengelola bisa membatasi kuota harian demi kelestarian alam, dan memantau status keselamatan setiap individu/kelompok yang sedang ada di atas gunung secara real-time.</p>
+
+            </div>
+
+            <div class="action-container">
+                <a href="https://www.esimaksi.wstif-polije.com/" target="_blank" style="display: inline-block; padding: 0.8rem 1.5rem; background: #000; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500;">Kunjungi Website E-Simaksi &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Portofolio. All rights reserved.</p>
+            <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

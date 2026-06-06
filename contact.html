@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Portfolio</title>
+
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">Anisa - Portofolio.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="fade-up" style="padding-bottom: 60px;">
+            <div class="section-header" style="text-align: center;">
+                <h2>Mari Berkolaborasi</h2>
+                <p>Punya ide atau penawaran menarik? Tinggalkan pesan, saya akan segera membalasnya.</p>
+            </div>
+
+            <div class="contact-container"
+                style="max-width: 600px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+                <form action="https://formsubmit.co/anisachfitria03@gmail.com" method="POST" class="contact-form">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="Pesan Baru dari Portofolio!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nama
+                            Anda</label>
+                        <input type="text" id="name" name="name" required placeholder="Tulis nama lengkap Anda"
+                            style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; background: #fafafa; outline: none;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Alamat
+                            Email</label>
+                        <input type="email" id="email" name="email" required placeholder="alamat.email@contoh.com"
+                            style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; background: #fafafa; outline: none;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 2rem;">
+                        <label for="message"
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tuliskan pesan, penawaran, atau pertanyaan Anda di sini..."
+                            style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; background: #fafafa; outline: none; resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn"
+                        style="width: 100%; border: none; cursor: pointer; font-size: 1rem;">Kirim Pesan
+                        Sekarang</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Portfolio. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
